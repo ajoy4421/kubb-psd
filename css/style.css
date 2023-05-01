@@ -1,0 +1,493 @@
+/* ===common css=== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+i{
+    cursor: pointer;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* ===common css=== */
+/* ===Nav section start here=== */
+body{
+    background-color: #f9f9f9;
+}
+#nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(24, 22, 33, 0.507);
+    padding: 32px 0;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand_logo>a{
+    display: flex;
+    align-items: center;
+}
+.brand_logo img{
+    width: 33px;
+    height: 23px;
+    overflow: hidden;
+}
+.brand_logo h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f6f6f6;
+    padding-left: 10px;
+}
+.menu>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+.menu>ul>li>a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f6f6f6;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+.menu>ul>li>a:hover{
+    color: #28b8d8;
+}
+/* ===Nav section end here=== */
+/* ===Banner section start here=== */
+#banner{
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 330px;
+    padding-bottom: 250px;
+}
+.banner_wrapper{
+    text-align: center;
+    color: #fff;
+}
+.banner_wrapper>h1,.banner_wrapper>h3{
+    text-transform: uppercase;
+}
+.banner_wrapper>h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner_wrapper>h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+.banner_wrapper>p{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* ===Banner section end here=== */
+/* ===service section start here=== */
+.service_wrapper{
+    text-align: center;
+}
+.service_wrapper>h3{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #444;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.service_wrapper>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    padding-bottom: 80px;
+}
+.service_wrapper>h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+.service_item_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 85px;
+}
+.service_item{
+    width: 370px;
+    padding: 15px;
+    border: 1px solid #e3e3e3;
+}
+.service_item_img{
+    width: 338px;
+    height: 225px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.service_item>h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #444;
+    padding-top: 25px;
+}
+.service_item>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 2.0;
+    padding: 12px;
+}
+/* ===service section end here=== */
+/* ===portfolio section start here=== */
+#portfolio{
+    width: 100%;
+    background-color: #2c2c2c;
+    padding: 50px 0;
+}
+.portfolio_wrapper{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.portfolio_wrapper>h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d5d5d5;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 44px;
+}
+.portfolio_wrapper>h2::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #d9d9d9;
+    top: 50%;
+    left: -115px;
+    transform: translateY(-50%);
+}
+.portfolio_wrapper>h2::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #d9d9d9;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+}
+.portfolio_item_wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.portfolio_item{
+    width: 25%;
+    height: 325px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.portfolio_item>img{
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio_wrapper .btn{
+    padding-top: 80px;
+}
+.portfolio_wrapper .btn a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a6a6a6;
+    border: 1px solid #a6a6a6;
+    padding: 15px 20px;
+}
+/* ===portfolio section end here=== */
+/* ===journal section start here=== */
+.journal_section_wrapper{
+    text-align: center;
+    padding: 80px 0;
+}
+.journal_section_wrapper>h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.journal_section_wrapper>h2::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #535353;
+    top: 50%;
+    left: -115px;
+    transform: translateY(-50%);
+}
+.journal_section_wrapper>h2::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #535353;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+}
+.journal_item_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.journal_item{
+    width: 370px;
+    border: 1px solid #e3e3e3;
+}
+.journal_item_img{
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    margin: 24px 0;
+}
+.journal_item_img>img{
+    width: 100%;
+    height: 100%;
+}
+.journal_item>h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #444;
+    padding-top: 25px;
+}
+.journal_item>h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+    padding-top: 10px;
+}
+
+.journal_item>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+    text-align: start;
+    padding: 0 25px;
+}
+
+.journal_cart_extend{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+.journal_cart_extend>a,p{
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #999;
+}
+.journal_cart_extend>a{
+    text-transform: uppercase;
+}
+.journal_cart_extend>a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #28b8d8;
+    left: 0;
+    bottom: -5px;
+}
+/* ===journal section end here=== */
+/* ===about section start here=== */
+#about{
+    margin-bottom: 80px;
+}
+.about_section_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+.about_common_heading>h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+.about_common_heading>h3::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: #d9d9d9;
+    top: 50%;
+    right: -115px;
+    transform: translateY(-50%);
+}
+.about_wrapper{
+    width: 570px;
+}
+.about_details_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.about_details_wrapper .about_img{
+    min-width: 200px;
+    min-height: 280px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    padding-right: 26px;
+}
+.about_details_wrapper .about_img>img{
+    width: 100%;
+    height: 100%;
+}
+.about_inner_details>h4{
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5;
+    padding-bottom: 14px;
+}
+.about_inner_details>p,.about_service_details>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+}
+.about_services_wrapper{
+    width: 570px;
+}
+
+.about_service_item{
+    display: flex;
+}
+.about_service_icon>i{
+    font-size: 40px;
+    color: #28b8d8;
+    padding-left: 6px;
+}
+.about_service_details{
+    padding: 0 0 25px 22px;
+}
+.about_service_details>h4{
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #444;
+    padding-bottom: 22px;
+}
+/* ===about section end here=== */
+/* ===footer section start here=== */
+#contact{
+    width: 100%;
+    background-color: #373737;
+    padding: 68px 0 0 0;
+}
+.footer_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 45px;
+}
+.footer_item{
+    padding-bottom: 33px;
+}
+.footer_common_heading>h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+.footer_item>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #cacaca;
+    line-height: 1.5;
+    padding-bottom: 35px;
+}
+.footer_item .address>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #cacaca;
+    padding-bottom: 15px;
+}
+.footer_item .address p span>i{
+    margin-right: 10px;
+}
+.footer{
+    width: 100%;
+    background-color: #333;
+    padding: 40px 0;
+}
+.copyright>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #cacaca;
+}
+/* ===footer section end here=== */
